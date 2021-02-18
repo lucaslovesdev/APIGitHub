@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>API GitHub</title>
+</head>
+<body>
+    <div class="container" id="container">
+
+
+
+        <input type="text" id ="inputUsuario">
+        <button id="pesquisar">Procura</button>
+
+        <main id="main">
+            <section class ="perfil"></section>
+                <img src="./img/default-user.png" alt="Foto de perfil" id="fotoPerfil">
+                <h1 id="nome">Nome</h1>
+                <h2 id="nomeUsuario">Nome de Usuário</h2>
+            
+            <section class ="repositorios" id="repo"></section>
+        </main>
+    </div>    
+
+    <!--Requisiçaõ seguindo arquitetura MVC-->
+    <script src="./scripts/Model.js"></script>
+    <script src="./scripts/View.js"></script>
+    <script src="./scripts/Controller.js"></script>
+    <script src="./scripts/app.js"></script>
+
+</body>
+</html>
